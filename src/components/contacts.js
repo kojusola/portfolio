@@ -37,42 +37,150 @@ const Contacts = ({ siteTitle }) => {
         justifyContent="space-between"
         width="100%"
       >
-        <Chakra.Text
+        <Chakra.Box
           fontFamily="Roboto"
           fontWeight="400"
           fontSize="18px"
           lineHeight="21px"
           mb="0px"
+          position="relative"
+          color="black"
+          _before={{
+            content: '""',
+            position: "absolute",
+            width: "100%",
+            transform: "scale(0)",
+            height: "1px",
+            bottom: "0",
+            right: "0",
+            backgroundColor: "black",
+            transformOrigin: "bottom right ",
+            transition: "transform 0.3s ease-out",
+          }}
+          display="block"
+          opacity={{ base: "1", md: "1" }}
+          transition="opacity 0.5s, color 0.5s"
+          _hover={{
+            color: "black",
+            opacity: "1",
+          }}
+          css={{
+            ":hover:before": {
+              transform: "scale(1)",
+              transformOrigin: "bottom left",
+            },
+          }}
         >
-          <Chakra.Link>Github</Chakra.Link>
-        </Chakra.Text>
-        <Chakra.Text
+          Github
+        </Chakra.Box>
+        <Chakra.Box
           fontFamily="Roboto"
           fontWeight="400"
           fontSize="18px"
           lineHeight="21px"
           mb="0px"
+          position="relative"
+          color="black"
+          _before={{
+            content: '""',
+            position: "absolute",
+            width: "100%",
+            transform: "scale(0)",
+            height: "1px",
+            bottom: "0",
+            right: "0",
+            backgroundColor: "black",
+            transformOrigin: "bottom right ",
+            transition: "transform 0.3s ease-out",
+          }}
+          display="block"
+          opacity={{ base: "1", md: "1" }}
+          transition="opacity 0.5s, color 0.5s"
+          _hover={{
+            color: "black",
+            opacity: "1",
+          }}
+          css={{
+            ":hover:before": {
+              transform: "scale(1)",
+              transformOrigin: "bottom left",
+            },
+          }}
         >
-          <Chakra.Link>LinkedIn</Chakra.Link>
-        </Chakra.Text>
-        <Chakra.Text
+          LinkedIn
+        </Chakra.Box>
+        <Chakra.Box
           fontFamily="Roboto"
           fontWeight="400"
           fontSize="18px"
           lineHeight="21px"
           mb="0px"
+          position="relative"
+          color="black"
+          _before={{
+            content: '""',
+            position: "absolute",
+            width: "100%",
+            transform: "scale(0)",
+            height: "1px",
+            bottom: "0",
+            right: "0",
+            backgroundColor: "black",
+            transformOrigin: "bottom right ",
+            transition: "transform 0.3s ease-out",
+          }}
+          display="block"
+          opacity={{ base: "1", md: "1" }}
+          transition="opacity 0.5s, color 0.5s"
+          _hover={{
+            color: "black",
+            opacity: "1",
+          }}
+          css={{
+            ":hover:before": {
+              transform: "scale(1)",
+              transformOrigin: "bottom left",
+            },
+          }}
         >
-          <Chakra.Link> Twitter</Chakra.Link>
-        </Chakra.Text>
-        <Chakra.Text
+          Twitter
+        </Chakra.Box>
+        <Chakra.Box
           fontFamily="Roboto"
           fontWeight="400"
           fontSize="18px"
           lineHeight="21px"
           mb="0px"
+          position="relative"
+          color="black"
+          _before={{
+            content: '""',
+            position: "absolute",
+            width: "100%",
+            transform: "scale(0)",
+            height: "1px",
+            bottom: "0",
+            right: "0",
+            backgroundColor: "black",
+            transformOrigin: "bottom right ",
+            transition: "transform 0.3s ease-out",
+          }}
+          display="block"
+          opacity={{ base: "1", md: "1" }}
+          transition="opacity 0.5s, color 0.5s"
+          _hover={{
+            color: "black",
+            opacity: "1",
+          }}
+          css={{
+            ":hover:before": {
+              transform: "scale(1)",
+              transformOrigin: "bottom left",
+            },
+          }}
         >
-          <Chakra.Link>CV</Chakra.Link>
-        </Chakra.Text>
+          CV
+        </Chakra.Box>
       </Chakra.Box>
     </Chakra.Box>
   )

@@ -7,15 +7,19 @@ import Layout from "../components/layout"
 import Hero from "../components/hero"
 import Projects from "../components/projects"
 import Contacts from "../components/contacts"
+import CustomCursor from "../components/custom-cursor"
 import Seo from "../components/seo"
 
 const IndexPage = () => (
-  <Layout>
-    <Seo title="Home" />
-    <Hero />
-    <Projects />
-    <Contacts />
-  </Layout>
+  <Box cursor="none">
+    <CustomCursor />
+    <Layout>
+      <Seo title="Home" />
+      <Hero />
+      <Projects />
+      <Contacts />
+    </Layout>
+  </Box>
 )
 
 export default IndexPage
