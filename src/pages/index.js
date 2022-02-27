@@ -9,17 +9,22 @@ import Projects from "../components/projects"
 import Contacts from "../components/contacts"
 import CustomCursor from "../components/custom-cursor"
 import Seo from "../components/seo"
+import gsap from "gsap"
+import { Tween } from "react-gsap"
 
-const IndexPage = () => (
-  <Box cursor="none">
-    <CustomCursor />
-    <Layout>
-      <Seo title="Home" />
-      <Hero />
-      <Projects />
-      <Contacts />
-    </Layout>
-  </Box>
-)
+const IndexPage = () => {
+  React.useEffect(() => {})
+  return (
+    <Box position="relative" cursor="none">
+      <CustomCursor />
+      <Layout>
+        <Seo title="Home" />
+        <Hero />
+        <Projects />
+        <Contacts />
+      </Layout>
+    </Box>
+  )
+}
 
 export default IndexPage
