@@ -55,7 +55,6 @@ const Layout = ({ children }) => {
           margin: `0 auto`,
           maxWidth: `1440px`,
           width: `100%`,
-          overflow: `hidden`,
         }}
       >
         <Header siteTitle={data.site.siteMetadata?.title || `Title`} />

@@ -12,19 +12,9 @@ const Contacts = ({ siteTitle }) => {
       pt={{ base: "40px", md: "64px" }}
       pb={{ base: "102px", md: "200px" }}
     >
-      <Chakra.Box width="auto" height="75px" overflow="hidden">
+      <Chakra.Box width="auto" height="75px">
         <Reveal repeat>
-          <Tween
-            from={{
-              y: "200px",
-              scrollTrigger: {
-                trigger: ".contact",
-                start: "-350px top",
-                end: "300px bottom",
-                scrub: 0.1,
-              },
-            }}
-          >
+          <Tween from={{ opacity: 0, x: -100 }} duration={2}>
             <Chakra.Text
               fontFamily="Roboto"
               fontWeight="700"
@@ -63,8 +53,8 @@ const Contacts = ({ siteTitle }) => {
             y: "200px",
             scrollTrigger: {
               trigger: ".contact",
-              start: "-350px top",
-              end: "300px bottom",
+              start: "300px bottom",
+              end: "bottom bottom",
               scrub: 0.8,
             },
           }}
